@@ -25,5 +25,5 @@ class FinancialReportController:
 
 
     def create_report(self, data):
-        # ADAPTER -- LISKOV SUBSTITUTION PRINCIPLE
+        # ADAPTER
         self.reporter.create_report(data)

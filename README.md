@@ -1,3 +1,19 @@
+# Patrones de arquitectura utilizados
+1. Factory en FinancialReportController.set_report_type
+Según el tipo de reporte se crea una clase diferente para 
+hacer el reporte
+2. Adapter en FinancialReportController.create_report
+Este método va a aceptar cualquier clase que soporte el método 
+create_report
+# Principios de diseño utilizados
+1. Single responsibility: cada clase tiene una responsabilidad muy 
+bien definida y el programa es el conjunto de las diferentes
+clases realizando sus respectivas responsabilidades
+2. Open closed principle: los métodos que crean diferentes partes
+del reporte en ambas clases Report son privados para que estos
+no se puedan modificar
+3. Interface segregation: cada clase solo utiliza dependencias que necesita
+
 # Building project locally
 Install VirtualEnvironment (one time)
 
